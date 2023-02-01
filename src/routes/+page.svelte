@@ -1,5 +1,5 @@
 <div
-  style="background-image: url('arch4.jpg'); height: 100vh;  max-height: -webkit-fill-available;"
+  style="background-image: url('arch4.jpg'); position: absolute; top:0; bottom:0; right:0; left:0; min-height: -webkit-fill-available;"
   class="flex items-center bg-contain bg-center bg-no-repeat"
 >
   <img class=" w-40 mx-auto" src="logo.png" />
