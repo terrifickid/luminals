@@ -1,11 +1,11 @@
 <div
-  style="background-image: url('arch4.jpg');"
-  class="flex items-center h-screen bg-contain bg-center bg-no-repeat"
+  style="background-image: url('arch4.jpg'); height: 100vh;  max-height: -webkit-fill-available;"
+  class="flex items-center bg-contain bg-center bg-no-repeat"
 >
   <img class=" w-40 mx-auto" src="logo.png" />
 </div>
 
-<div class="absolute bottom-0 w-full flex justify-center  items-center p-4">
+<div class="fixed bottom-0 w-full flex justify-center  items-center p-4">
   <a href="https://discord.com/invite/luminaries">
     <svg
       role="img"
