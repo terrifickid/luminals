@@ -5,7 +5,7 @@
   <img class=" w-40 mx-auto" src="logo.png" />
 </div>
 
-<div class="fixed bottom-0 w-full flex justify-center  items-center p-4">
+<div class="fixed bottom-2 w-full flex justify-center  items-center p-4">
   <a href="https://discord.com/invite/luminaries">
     <svg
       role="img"
