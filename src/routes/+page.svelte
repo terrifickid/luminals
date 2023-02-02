@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   let el;
+  let el2;
   let smokeParticles = [];
 
   function rand() {
@@ -9,7 +10,7 @@
 
   onMount(() => {
     console.log("Loaded!");
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 8; i++) {
       var smoke_element = document.createElement("div");
       smoke_element.setAttribute("x", rand());
       smoke_element.setAttribute("y", rand());
@@ -23,6 +24,22 @@
       //Adjust Z Rotation
       // smoke_element.rotation.z = Math.random() * 360;
       el.appendChild(smoke_element);
+      smokeParticles.push(smoke_element);
+    }
+    for (var i = 0; i < 2; i++) {
+      var smoke_element = document.createElement("div");
+      smoke_element.setAttribute("x", rand());
+      smoke_element.setAttribute("y", rand());
+      smoke_element.setAttribute("z", rand());
+      smoke_element.setAttribute("d", rand());
+
+      smoke_element.classList.add("smoke");
+
+      //Adulst 3d Position
+
+      //Adjust Z Rotation
+      // smoke_element.rotation.z = Math.random() * 360;
+      el2.appendChild(smoke_element);
       smokeParticles.push(smoke_element);
     }
   });
@@ -43,7 +60,7 @@
 
 <div class="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
   <div
-    style="animation: spin 1000s linear infinite, twinkle 1s linear infinite; background-image: url('2534835.jpg'); background-size: 50vw; opacity: 0.5; position: absolute; width: 500vw; height: 500vw; left: -200vw; top: -200vw;"
+    style="animation: spin 1000s linear infinite, twinkle 1s linear infinite; background-image: url('2.jpg'); background-size: 80vw; opacity: 0.2; position: absolute; width: 500vw; height: 500vw; left: -200vw; top: -200vw;"
   />
 
   <div
@@ -51,9 +68,14 @@
     class="  absolute top-0 left-0 right-0 bottom-0  overflow-hidden z-20"
   />
 
+  <div
+    bind:this={el2}
+    class="  absolute top-0 left-0 right-0 bottom-0  overflow-hidden "
+  />
+
   <div class="absolute top-0 left-0 right-0 bottom-0 overflow-hidden z-10">
     <div
-      style="background-image: url('test5.png'); position: absolute; top:0; bottom:0; right:0; left:0; min-height: -webkit-fill-available;"
+      style="background-image: url('test.png'); position: absolute; top:0; bottom:0; right:0; left:0; min-height: -webkit-fill-available;"
       class="flex items-center bg-contain bg-center bg-no-repeat"
     >
       <img class=" w-40 mx-auto" src="logo.png" />
@@ -89,7 +111,7 @@
   <a
     href="https://mint-luminaries.vercel.app/"
     class="  text-gray-200 hover:text-white rounded uppercase text-sm mx-7"
-    >Mint NFT</a
+    >Purchase</a
   >
 
   <a href="https://www.instagram.com/luminaries_by_space_station/">

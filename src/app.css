@@ -1,26 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes twinkle {
-  0% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0.6;
-  }
-}
 
 .smoke {
   width: 200vw;
@@ -28,8 +8,9 @@
   background: url("/cloud6.png");
 
   position: absolute;
-  opacity: 0.4;
+  opacity: 0.2;
   background-size: 120vw 120vh;
   left: -50vw;
   top: -50vh;
+  filter: hue-rotate(5deg);
 }
