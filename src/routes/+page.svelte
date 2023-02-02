@@ -10,7 +10,7 @@
 
   onMount(() => {
     console.log("Loaded!");
-    for (var i = 0; i < 2; i++) {
+    for (var i = 0; i < 4; i++) {
       var smoke_element = document.createElement("div");
       smoke_element.setAttribute("x", rand());
       smoke_element.setAttribute("y", rand());
@@ -26,7 +26,7 @@
       el.appendChild(smoke_element);
       smokeParticles.push(smoke_element);
     }
-    for (var i = 0; i < 8; i++) {
+    for (var i = 0; i < 10; i++) {
       var smoke_element = document.createElement("div");
       smoke_element.setAttribute("x", rand());
       smoke_element.setAttribute("y", rand());
