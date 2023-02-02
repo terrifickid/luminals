@@ -25,7 +25,7 @@
 .smoke {
   width: 100vw;
   height: 200vh;
-  background: url("cloud4.png");
+  background: url("/cloud4.png");
 
   position: absolute;
   opacity: 0.1;
