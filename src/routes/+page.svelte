@@ -78,9 +78,7 @@
       style="background-image: url('test.png'); position: absolute; top:-3rem; bottom:0; right:0; left:0vw; min-height: -webkit-fill-available;"
       class="flex items-center bg-contain bg-center bg-no-repeat"
     >
-      <a href="https://mint-luminaries.vercel.app/"
-        ><img class=" w-40 sm:w-44 mx-auto" src="logo.png" /></a
-      >
+      <img class=" w-40 sm:w-44 mx-auto" src="logo.png" />
     </div>
   </div>
 </div>
