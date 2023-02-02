@@ -111,7 +111,7 @@
   <a
     href="https://mint-luminaries.vercel.app/"
     class="  text-gray-200 hover:text-white rounded uppercase text-sm mx-7"
-    >Purchase</a
+    >Now Available</a
   >
 
   <a href="https://www.instagram.com/luminaries_by_space_station/">
