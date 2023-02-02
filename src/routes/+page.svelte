@@ -75,10 +75,10 @@
 
   <div class="absolute top-0 left-0 right-0 bottom-0 overflow-hidden z-10">
     <div
-      style="background-image: url('test.png'); position: absolute; top:0; bottom:0; right:0; left:0; min-height: -webkit-fill-available;"
+      style="background-image: url('test.png'); position: absolute; top:-3rem; bottom:0; right:0; left:0vw; min-height: -webkit-fill-available;"
       class="flex items-center bg-contain bg-center bg-no-repeat"
     >
-      <img class=" w-40 mx-auto" src="logo.png" />
+      <img class=" w-40 md:w-48 mx-auto" src="logo.png" />
     </div>
   </div>
 </div>
