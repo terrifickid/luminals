@@ -52,10 +52,10 @@
       var d = smokeParticles[i].getAttribute("d");
       smokeParticles[i].style.transform = "rotateZ(" + z + "deg)";
 
-      smokeParticles[i].setAttribute("z", parseFloat(z) + 0.2);
+      smokeParticles[i].setAttribute("z", parseFloat(z) + 0.15);
       console.log("t", smokeParticles[i].style.transform);
     }
-  }, 40);
+  }, 60);
 </script>
 
 <div class="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
@@ -78,7 +78,7 @@
       style="background-image: url('test.png'); position: absolute; top:-3rem; bottom:0; right:0; left:0vw; min-height: -webkit-fill-available;"
       class="flex items-center bg-contain bg-center bg-no-repeat"
     >
-      <img class=" w-40 md:w-48 mx-auto" src="logo.png" />
+      <img class=" w-40 sm:w-44 mx-auto" src="logo.png" />
     </div>
   </div>
 </div>
