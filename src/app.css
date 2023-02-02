@@ -9,3 +9,28 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.smoke {
+  width: 100vw;
+  height: 200vh;
+  background: url("cloud4.png");
+
+  position: absolute;
+  opacity: 0.1;
+  background-size: 100vh 100vw;
+  left: -25vw;
+  top: -25vh;
+  filter: hue-rotate(34deg);
+}

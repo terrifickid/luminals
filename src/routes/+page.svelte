@@ -1,9 +1,58 @@
-<div class="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
+<script>
+  import { onMount } from "svelte";
+  let el;
+  let smokeParticles = [];
+
+  function rand() {
+    return Math.floor(Math.random() * 360);
+  }
+
+  onMount(() => {
+    console.log("Loaded!");
+    for (var i = 0; i < 20; i++) {
+      var smoke_element = document.createElement("div");
+      smoke_element.setAttribute("x", rand());
+      smoke_element.setAttribute("y", rand());
+      smoke_element.setAttribute("z", rand());
+      smoke_element.setAttribute("d", rand());
+
+      smoke_element.classList.add("smoke");
+
+      //Adulst 3d Position
+
+      //Adjust Z Rotation
+      // smoke_element.rotation.z = Math.random() * 360;
+      el.appendChild(smoke_element);
+      smokeParticles.push(smoke_element);
+    }
+  });
+
+  setInterval(() => {
+    for (var i = 0; i < smokeParticles.length; i++) {
+      var x = smokeParticles[i].getAttribute("x");
+      var y = smokeParticles[i].getAttribute("y");
+      var z = smokeParticles[i].getAttribute("z");
+      var d = smokeParticles[i].getAttribute("d");
+      smokeParticles[i].style.transform = "rotateZ(" + z + "deg)";
+
+      smokeParticles[i].setAttribute("z", parseFloat(z) + 0.4);
+      console.log("t", smokeParticles[i].style.transform);
+    }
+  }, 40);
+</script>
+
+<div
+  style="animation: spin 1920s linear infinite, twinkle 2s linear infinite; background-image: url('2534835.jpg'); background-size: 50vw; opacity: 0.75; position: absolute; width: 500vw; height: 500vw; left: -200vw; top: -200vw;"
+/>
+
+<div
+  bind:this={el}
+  class="  absolute top-0 left-0 right-0 bottom-0  overflow-hidden z-20"
+/>
+
+<div class="absolute top-0 left-0 right-0 bottom-0 overflow-hidden z-10">
   <div
-    style="animation: spin 480s linear infinite; background-image: url('2534835.jpg'); background-size: 50vw; opacity: 0.75; position: absolute; width: 500vw; height: 500vw; left: -200vw; top: -200vw;"
-  />
-  <div
-    style="background-image: url('test.png'); position: absolute; top:0; bottom:0; right:0; left:0; min-height: -webkit-fill-available;"
+    style="background-image: url('test5.png'); position: absolute; top:0; bottom:0; right:0; left:0; min-height: -webkit-fill-available;"
     class="flex items-center bg-contain bg-center bg-no-repeat"
   >
     <img class=" w-40 mx-auto" src="logo.png" />
@@ -65,3 +114,6 @@
     >
   </div>
 </div>
+
+<style>
+</style>
