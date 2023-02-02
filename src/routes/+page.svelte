@@ -10,7 +10,7 @@
 
   onMount(() => {
     console.log("Loaded!");
-    for (var i = 0; i < 8; i++) {
+    for (var i = 0; i < 2; i++) {
       var smoke_element = document.createElement("div");
       smoke_element.setAttribute("x", rand());
       smoke_element.setAttribute("y", rand());
@@ -26,7 +26,7 @@
       el.appendChild(smoke_element);
       smokeParticles.push(smoke_element);
     }
-    for (var i = 0; i < 2; i++) {
+    for (var i = 0; i < 8; i++) {
       var smoke_element = document.createElement("div");
       smoke_element.setAttribute("x", rand());
       smoke_element.setAttribute("y", rand());
@@ -60,7 +60,7 @@
 
 <div class="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
   <div
-    style="animation: spin 1000s linear infinite, twinkle 1s linear infinite; background-image: url('2.jpg'); background-size: 80vw; opacity: 0.2; position: absolute; width: 500vw; height: 500vw; left: -200vw; top: -200vw;"
+    style="animation: spin 1000s linear infinite, twinkle 1s linear infinite; background-image: url('2534835.jpg'); background-size: 20vw; opacity: 0.2; position: absolute; width: 500vw; height: 500vw; left: -200vw; top: -200vw;"
   />
 
   <div
@@ -70,7 +70,7 @@
 
   <div
     bind:this={el2}
-    class="  absolute top-0 left-0 right-0 bottom-0  overflow-hidden "
+    class="  absolute top-0 left-0 right-0 bottom-0  overflow-hidden z-30"
   />
 
   <div class="absolute top-0 left-0 right-0 bottom-0 overflow-hidden z-10">
