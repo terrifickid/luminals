@@ -29,7 +29,7 @@
 
   position: absolute;
   opacity: 0.4;
-  background-size: 50rem 50rem;
+  background-size: 120vw 120vh;
   left: -50vw;
   top: -50vh;
   filter: hue-rotate(34deg);

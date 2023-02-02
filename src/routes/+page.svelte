@@ -43,7 +43,7 @@
 
 <div class="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
   <div
-    style="animation: spin 1920s linear infinite, twinkle 1s linear infinite; background-image: url('2534835.jpg'); background-size: 50vw; opacity: 0.5; position: absolute; width: 500vw; height: 500vw; left: -200vw; top: -200vw;"
+    style="animation: spin 1000s linear infinite, twinkle 1s linear infinite; background-image: url('2534835.jpg'); background-size: 50vw; opacity: 0.5; position: absolute; width: 500vw; height: 500vw; left: -200vw; top: -200vw;"
   />
 
   <div
